@@ -6,9 +6,9 @@
 **Location:** 
 
 **Attendance**  
-**Present: **
+**Present:**
 
-**Absent: **
+**Absent:**
 
 **Status Updates**
 
