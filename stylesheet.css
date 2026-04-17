@@ -32,7 +32,7 @@ header {
 }
 
 h1 {
-    color: #0080ff;
+    color: hsl(210, 100%, 50%);
     text-decoration: underline;
     margin-bottom: 0.5em;
 }
@@ -130,6 +130,7 @@ textarea {
     flex-wrap: wrap;
     gap: 0.75rem;
     list-style-position: inside;
+    width: 12cm;
 }
 
 /* Grid */
@@ -143,7 +144,6 @@ textarea {
 footer {
     position: static;
     text-align: center;
-    width: 6cm;
 }
 
 :root {
@@ -162,11 +162,88 @@ footer {
         align-items: flex-start;
     }
 
-    .agenda-grid {
+    .agenda {
         grid-template-columns: 1fr;
     }
 
     nav a {
         display: block;
+    }
+}
+
+/* Universal Selector (*) */
+* {
+    box-sizing: border-box;
+}
+
+/* Class Selector (.class) */
+.hidden {
+    display: none;
+}
+
+/* ID Selector (#id) */
+#attendance {
+    background-color: #f8fbff;
+}
+
+/* Element Selector (element) */
+summary {
+    cursor: pointer;
+}
+
+/* Attribute Selector ([attribute=foo]) */
+input[type="text"] {
+    border: 2px solid #93c5fd;
+}
+
+/* Pseudo-class Selector (e.g. p:hover) */
+summary:hover {
+    color: #2563eb;
+}
+
+/* Selector List (element, element) */
+h1, h2 {
+    letter-spacing: 0.5px;
+}
+
+/* Descendant Combinator (element element) */
+section ul {
+    padding-left: 1.5rem;
+}
+
+/* Child Combinator (element > element) */
+nav > a {
+    font-weight: 600;
+}
+
+/* General sibling combinator (element ~ element) */
+h1 ~ h3 {
+    font-style: italic;
+}
+
+/* Adjacent sibling combinator (element + element) */
+h1 + h2 {
+    margin-top: 0.5rem;
+}
+
+/* Combining Two Selectors (element.class) */
+ul.attendance {
+    border-top: 2px dashed #cbd5e1;
+    padding-top: 0.5rem;
+}
+
+/* New Selector :has() */
+section:has(img) {
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+/* Nested Selectors */
+header {
+    & nav {
+        margin-top: 0.5rem;
+    }
+
+    & p {
+        font-size: 0.95rem;
     }
 }
