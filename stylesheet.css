@@ -1,6 +1,5 @@
 body {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: var(--main-text, black);
@@ -25,7 +24,6 @@ header {
     padding-bottom: 1rem;
     padding-left: 1rem;
     border-style: solid;
-    border-color: #cbd5e1;
     border-width: 2px;
     border-radius: 12px;
     text-align: center;
